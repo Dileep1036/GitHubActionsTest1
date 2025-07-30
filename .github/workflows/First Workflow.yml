@@ -11,6 +11,8 @@ jobs:
         with:
           node-version: 'latest'
       - name: install dependcies
-        run: npm install
+        run: |
+          cd GitHub-Actions/PracticeProject1
+          npm install
       - name: Run Tests
         run: npm test
