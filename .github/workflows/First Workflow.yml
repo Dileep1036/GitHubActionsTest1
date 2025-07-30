@@ -10,5 +10,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 'latest'
+      - name: install dependcies
+        run: npm ci
       - name: Run Tests
         run: npm test
